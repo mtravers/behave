@@ -1,0 +1,1 @@
+(defclass draw-tester (block-text-subview drag-mixin)  ((counter :initform 0))  (:default-initargs :text "new"))(defmethod* view-draw-contents :before ((v draw-tester))  (set-text v (princ-to-string (incf counter))))(make-instance 'draw-tester :view-container *win*)

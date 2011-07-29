@@ -1,0 +1,1 @@
+(in-package :beh);;; set a small working block size(setf *default-block-font* `("Tekton" 14))(setf *standard-border* 3)              ; 2 is too hard to see (maybe with a bigger color delta?)

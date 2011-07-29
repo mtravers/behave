@@ -1,0 +1,1 @@
+(in-package :beh)(reset-species)(defspecies fish)(defspecies shark)(defspecies food)(download)(run-command "setup");;; build an agent, set species by hand.(make-instance 'species-block :species 'fish :text "fish")

@@ -1,0 +1,1 @@
+(in-package :ccl)(require 'lispequ);; my nemesis(provide "QUICKDRAW")(make-instance 'file-set  :name "utility"  :define-logical-host? t  :files  '(";gcable-macptrs"    ";clos-utility"    ";quickdraw-utility"    ";icon-button"    ";popup-with-submenu-actions"    ";offscreen"    ";*"))

@@ -1,0 +1,1 @@
+(defun start-all-agents ()  (dolist (a (all-agents))    (force-on (agent-block a))))(defmethod force-on ((ab agent-block))  (ccl::press (agent-block-switch ab)))(defmethod agent-block-switch ((ab agent-block))  (find-view ab #'(lambda (sv) (typep sv 'agent-toggle-button))))

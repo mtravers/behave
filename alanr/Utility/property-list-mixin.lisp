@@ -1,0 +1,1 @@
+(in-package :ccl)(defclass property-list-mixin ()  ((plist :initarg :plist :initform nil :accessor plist)))(defmethod getprop ((p property-list-mixin) indicator)  (getf (plist p) indicator))(defmethod putprop ((p property-list-mixin) indicator value)  (setf (getf (plist p) indicator) value)  value)

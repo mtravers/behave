@@ -1,0 +1,1 @@
+(defun try-colors (n saturation-func value-func)  (let ((w (make-instance 'window :color-p t)))    (dotimes (nn n)      (with-rect (r (* n ws) 0 (* (+ n 1) ws) ws)        (let ((hue (/ nn n)))          (with-fore-color (hsv hue (funcall sat-func hue) (funcall value-func hue))            (#_FillRect r)))))))

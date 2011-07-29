@@ -1,0 +1,1 @@
+(in-package :ccl)(require 'lispequ)(make-instance 'file-set  :name "quickdraw-tools"  :define-logical-host? t  :files  '("utility"    ";quickdraw-bottleneck"))

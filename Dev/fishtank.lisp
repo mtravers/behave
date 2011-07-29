@@ -1,0 +1,1 @@
+;;; interface to Mark Neri fishtank(defun download ()  )(defmethod start-agent-block ((block agent-block))  )(defmethod stop-agent-block ((block agent-block))  )(defmethod value-changed :after ((v my-slider-view))  )
